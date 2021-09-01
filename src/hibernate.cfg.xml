@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+        <property name="hbm2ddl.auto">update</property> 
+		
+		<!--  HIKARI -->
+		
+		<property name="connection.provider_class">com.zaxxer.hikari.hibernate.HikariConnectionProvider</property>
+		<property name="hibernate.hikari.minimumIdle">5</property> 
+		<property name="hibernate.hikari.maximumPoolSize">10</property>
+		<property name="hibernate.hikari.idleTimeout">3000</property> 
+
+             
+        <mapping class="lebah.db.entity.User"/>
+        <mapping class="lebah.db.entity.Role"/>
+        <mapping class="lebah.db.entity.Menu"/>
+        <mapping class="lebah.db.entity.Log"/>
+        
+        <mapping class="lms.entity.Biblio" />
+        <mapping class="lms.entity.BiblioItem" />
+        <mapping class="lms.entity.Item" />
+        <mapping class="lms.entity.ItemType" />
+        <mapping class="lms.entity.Publisher" />
+        <mapping class="lms.entity.Subject" />
+        <mapping class="lms.entity.DocumentType" />
+        <mapping class="lms.entity.DocumentStatus" />
+        <mapping class="lms.entity.DocumentFormat" />
+        <mapping class="lms.entity.CatalogingLevel" />
+        
+        <mapping class="lms.entity.Patron" />
+        <mapping class="lms.entity.Loan" />
+        <mapping class="lms.entity.HoldBiblioItem" />
+        <mapping class="lms.entity.FeaturedBiblio" />
+         
+    </session-factory>
+</hibernate-configuration>

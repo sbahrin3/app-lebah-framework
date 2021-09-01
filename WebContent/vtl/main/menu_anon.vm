@@ -1,0 +1,11 @@
+<script>
+	enableCheckIdle = false;
+</script>
+
+<div class="vertical-menu">
+
+	<a href="javascript:getPage('lebah.module.LandingPageModule')"><i class="fa fa-superpowers " aria-hidden="true"></i><span class="menu-text">Start</span></a>
+
+
+</div>
+	
