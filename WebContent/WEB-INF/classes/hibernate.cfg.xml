@@ -20,21 +20,6 @@
         <mapping class="lebah.db.entity.Menu"/>
         <mapping class="lebah.db.entity.Log"/>
         
-        <mapping class="lms.entity.Biblio" />
-        <mapping class="lms.entity.BiblioItem" />
-        <mapping class="lms.entity.Item" />
-        <mapping class="lms.entity.ItemType" />
-        <mapping class="lms.entity.Publisher" />
-        <mapping class="lms.entity.Subject" />
-        <mapping class="lms.entity.DocumentType" />
-        <mapping class="lms.entity.DocumentStatus" />
-        <mapping class="lms.entity.DocumentFormat" />
-        <mapping class="lms.entity.CatalogingLevel" />
-        
-        <mapping class="lms.entity.Patron" />
-        <mapping class="lms.entity.Loan" />
-        <mapping class="lms.entity.HoldBiblioItem" />
-        <mapping class="lms.entity.FeaturedBiblio" />
-         
+       
     </session-factory>
 </hibernate-configuration>
